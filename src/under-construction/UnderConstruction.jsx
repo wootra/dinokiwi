@@ -4,7 +4,11 @@ import './UnderConstruction.css';
 function UnderConstruction() {
   return (
     <div className="UnderConstruction-container">
-      <img src={comingSoon} alt="under construction" />
+      <img
+        src={comingSoon}
+        alt="under construction"
+        className="UnderConstruction-image"
+      />
     </div>
   );
 }

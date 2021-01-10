@@ -1,0 +1,38 @@
+.FarmInfo_container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.FarmInfo_container * {
+    text-align: left;
+}
+
+.FarmInfo_introImg{
+
+}
+
+.FarmInfo_introText1 {
+
+}
+
+.FarmInfo_introText2 * {
+    font-size: 0.8rem;
+    
+}
+
+.FarmInfo_introText2 h3 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color:#a6d36b;
+}
+
+
+.FarmInfo_introText2 li {
+    color: #919191;
+}
+
+.FarmInfo_introText2 span {
+    color: #cf9311;
+    font-weight: 800;
+}

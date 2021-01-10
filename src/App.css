@@ -1,19 +1,17 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template-areas: 'header' 'content' 'footer';
+  grid-template-areas: 'header' 'navigator' 'content' 'footer';
 }
 
 .App-header {
   background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
   grid-area: header;
+}
+
+.App-navigator {
+  grid-area: navigator;
 }
 
 .App-market {

@@ -1,0 +1,67 @@
+.Navigator-container {
+    height: 40px;
+    display: relative;
+    max-width: 100%;
+    
+}
+
+.Navigator-container * {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.Navigator-container .Navigator-menu {
+    position: relative;
+}
+
+
+.Navigator-menu {
+    height: 40px;
+}
+
+.Navigator-menu * {
+    top: 50%;
+}
+
+.Navigator-menu:nth-child(even) {
+    background-color: #70c770;
+    color:rgb(60, 90, 3);
+}
+
+.Navigator-menu:nth-child(odd) {
+    background-color: #469446;
+    color:aliceblue;
+}
+
+.Navigator-menu {
+    margin-left: -20px;
+}
+
+.Navigator-menu span {
+    margin-left: 20px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+
+.Navigator-menu:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size:0;
+    border:solid #469446 20px;
+    border-bottom: solid rgba(0,0,0,0) 20px;
+    border-top:solid rgba(0,0,0,0) 20px;
+    border-right: solid rgba(0,0,0,0) 20px;
+}
+
+.Navigator-menu:first-child:before {
+    border:none;
+}
+
+.Navigator-menu:first-child {
+    margin-left: 0;
+}

@@ -1,0 +1,9 @@
+.NavDrawer_button {
+    width: 20px;
+    height: 20px;
+}
+
+.NavDrawer_container {
+    position: fixed;
+    z-index: 1000;
+}
