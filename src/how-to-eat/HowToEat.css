@@ -17,6 +17,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 50px 1fr;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 .HowToEat_index {
@@ -40,6 +41,8 @@
     font-size: 0.9rem;
     margin-top: -1rem;
     grid-column: 2;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 10pt;
 }
 
 .HowToEat_howto_desc::before {

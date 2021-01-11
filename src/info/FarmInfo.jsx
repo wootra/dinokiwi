@@ -3,7 +3,6 @@ import farmIntro from './farm_introduce.png';
 import './Info.css';
 
 export default forwardRef((props, ref)=> {
-  console.log("farmInfo:", {ref})
   const {className} = props;
   return (
     <div ref={ref} className={`container FarmInfo_container${className ? ' ' + className : ''}`} >

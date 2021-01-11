@@ -82,7 +82,9 @@
 }
 
 .Nutrition_title span:not(first-child){
-    margin-left: -3em;
+    margin-left: 0.5em;
+    word-wrap: none;
+    word-break: keep-all;
 }
 
 .Nutrition_health_info_list_side_effects {

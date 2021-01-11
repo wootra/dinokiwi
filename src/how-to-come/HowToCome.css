@@ -1,0 +1,34 @@
+.HowToCome_introImg {
+    object-fit:contain;
+    max-width: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+}
+
+.HowToCome_container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.HowToCome_container * {
+    text-align: left;
+}
+
+.HowToCome_section * {
+    font-size: 0.8rem;
+}
+
+.HowToCome_section header {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color:#80a155;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.HowToCome_section span {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color:#476420;
+}

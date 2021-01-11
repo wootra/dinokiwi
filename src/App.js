@@ -9,6 +9,7 @@ import Nutrition from './nutirition/Nutrition';
 import { createRef} from 'react';
 import HowToStore from './how-to-store/HowToStore';
 import HowToEat from './how-to-eat/HowToEat';
+import HowToCome from './how-to-come/HowToCome';
 
 
 function App() {
@@ -48,7 +49,7 @@ const items =[
         <hr/>
         <Market ref={menus.market.ref} />
         <hr/>
-        <UnderConstruction />
+        <HowToCome ref={menus.howToCome.ref}/>
       </content>
       <Footer className="App-footer" />
     </div>
