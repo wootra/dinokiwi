@@ -74,15 +74,32 @@ export default forwardRef((props, ref)=> {
         </div>
         <div className="col-12 col-md-6 Nutrition_box Nutrition_box2">
             <div className="Nutrition_text Nutrition_text4">
-              <section>
-                <p>KBS TV, 생로병사의 비밀</p>
-                <p>방송일: 2004년 8월 31일</p>
-                <p>
-                  <span>부제: 73회 여름기획 컬러과일건강법</span>
-                  <span>(제4편 달콤한 보약 '초록')</span>
-                </p>
+              
+              <ul className="Nutrition_health_info_list">
+                <li>
+                  <div className="Nutrition_health_info_list_index">01</div>
+                  <div>
+                    <a href="https://youtu.be/07QEHRP5Mcs?t=140" rel="noreferrer" target="_blank" className="Nutrition_health_info_list_howto"><p>키위는 왜 몸에 좋을까요?</p></a> 
+                    <p className="Nutrition_health_info_list_howto_desc">키위가 몸에 좋은 이유를 자근자근 말씀해 주시네요.</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="Nutrition_health_info_list_index">02</div>
+                  <div>
+                    <a href="https://youtu.be/07QEHRP5Mcs?t=495" rel="noreferrer" target="_blank" className="Nutrition_health_info_list_howto"><p>아무리 좋아도 부작용은 알고 먹어야겠죠?</p></a> 
+                      <ul className="Nutrition_health_info_list_side_effects">
+                        <li>칼륨함량이 높아 신장에 문제가 있다면 조심하세요</li>
+                        <li>수산함량이 높아 통풍, 류마티스 관절염이 있다면 조심하세요</li>
+                        <li>찬 성질의 과일이므로, 과다섭취 시 설사를 일으킬 수 있습니다.</li>
+                        <li>가려움증이나 키위털 알러지가 있다면 조심해야 합니다.</li>
+                      </ul>
+                  </div>
+                </li>
+
+
                 
-              </section>
+              </ul>
+            
             </div>
         </div>
       </div>

@@ -82,7 +82,16 @@
 }
 
 .Nutrition_title span:not(first-child){
-    padding-left: 0.3em;
+    margin-left: -3em;
+}
+
+.Nutrition_health_info_list_side_effects {
+    margin-left: -2em;
+}
+
+.Nutrition_health_info_list_side_effects > li {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 10pt;
 }
 
 .Nutrition_list li::before {
@@ -90,5 +99,50 @@
     font-family: 'Do Hyeon', sans-serif;
     content: counter(nutrition_order) '위 ';
     font-size: small;
-    
+}
+
+
+.Nutrition_health_info_list {
+    counter-reset: why-should_eat;
+}
+
+.Nutrition_health_info_list > li {
+    list-style: none;
+    font-size: 0.9rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50px 1fr;
+}
+
+.Nutrition_health_info_list_index {
+    font-size: 3em;
+    grid-column: 1;
+    text-align: left;
+    color: #accc82;
+    counter-increment: why-should_eat;
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 50px;
+}
+
+.Nutrition_health_info_list_howto {
+    color:#6b9139;
+    text-align: left;
+    grid-column: 2;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.Nutrition_health_info_list_howto_desc {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: -1rem;
+    grid-column: 2;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.Nutrition_health_info_list_howto_desc::before {
+    content: '(';
+}
+
+.Nutrition_health_info_list_howto_desc::after {
+    content: ')';
 }

@@ -17,22 +17,29 @@ export default forwardRef((props, ref)=> {
               <li>
                 <div className="HowToEat_index">01</div>
                 <div>
-                  <p className="HowToEat_howto">상온이나 약간 서늘한 곳에서 비닐에 싸서 수분이 증발하지 않도록 보관해 주세요.</p> 
-                  <p className="HowToEat_howto_desc">따뜻한 곳에 두면 일주일 정도면 익습니다.</p>
+                  <a href="https://youtu.be/gcZoW1uaq_8" rel="noreferrer" target="_blank" className="HowToEat_howto"><p>보통은 껍질을 벗기죠? 껍질째로 드세요</p></a> 
+                  <p className="HowToEat_howto_desc">우리가 잘못 알고 있었던 상식! 내몸 사용설명서 유튜브 비디오(2분 30초)</p>
                 </div>
               </li>
               <li>
                 <div className="HowToEat_index">02</div>
                 <div>
-                  <p className="HowToEat_howto">살짝 눌러서 탄력이 있게 들어가면 알맞게 익은 겁니다.</p> 
-                  <p className="HowToEat_howto_desc">이 때부터 냉장고에 보관하세요</p>
+                  <a href="https://youtu.be/A6rFaknuUlw" rel="noreferrer" target="_blank" className="HowToEat_howto"><p>털 알러지가 있다면 껍질은 까고 먹어야겠죠? 숟가락으로 쉽게 껍질을 까세요!</p></a> 
+                  <p className="HowToEat_howto_desc">영어 나온다고 겁내지 마세요. 소리 없어도 다 이해됩니다.(46초)</p>
                 </div>
               </li>
               <li>
                 <div className="HowToEat_index">03</div>
                 <div>
-                  <p className="HowToEat_howto">빨리 익혀 먹으려면 사과조각과 함께 보관하세요.</p> 
-                  <p className="HowToEat_howto_desc">사과가 없다면 단단한 상태에서 약 5~7일, 사과를 넣으면 약 3~5일이면 익습니다.</p>
+                  <a href="https://youtu.be/07QEHRP5Mcs?t=565" rel="noreferrer" target="_blank" className="HowToEat_howto"><p>살짝 익혀서 드세요!</p></a> 
+                  <p className="HowToEat_howto_desc">체내 흡수율을 높일 수 있다고 하네요</p>
+                </div>
+              </li>
+              <li>
+                <div className="HowToEat_index">04</div>
+                <div>
+                  <a href="https://youtu.be/GvzRJ4U_tS0" rel="noreferrer" target="_blank" className="HowToEat_howto"><p>키위 드레싱 만드는 법!</p></a> 
+                  <p className="HowToEat_howto_desc">이 분 말씀 구수히 하시네요. 앞에서 약 1분 30초간은 드레싱, 이후는 샐러드 만드는 법입니다.</p>
                 </div>
               </li>
             </ul>
