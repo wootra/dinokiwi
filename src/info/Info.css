@@ -24,12 +24,22 @@
 .FarmInfo_introText2 h3 {
     font-size: 1.1rem;
     font-weight: bolder;
-    color:#a6d36b;
+    color:#80a155;
+    counter-reset: farm-tech;
 }
 
 
 .FarmInfo_introText2 li {
-    color: #919191;
+    color: #707070;
+    list-style: none;
+}
+
+.FarmInfo_introText2 li::before {
+    color: #297c42;
+    counter-increment: farm-tech;
+    font-family: 'Do Hyeon', sans-serif;
+    content: '0'  counter(farm-tech) '. ';
+    font-size: small;
 }
 
 .FarmInfo_introText2 span {

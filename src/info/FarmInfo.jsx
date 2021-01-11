@@ -1,9 +1,12 @@
+import { forwardRef } from 'react';
 import farmIntro from './farm_introduce.png';
 import './Info.css';
 
-function FarmInfo() {
+export default forwardRef((props, ref)=> {
+  console.log("farmInfo:", {ref})
+  const {className} = props;
   return (
-    <div className="container FarmInfo_container">
+    <div ref={ref} className={`container FarmInfo_container${className ? ' ' + className : ''}`} >
       <div className="row">
         <img
           className="col-xs col-md-6 FarmInfo_introImg"
@@ -42,6 +45,4 @@ function FarmInfo() {
       </div>
     </div>
   );
-}
-
-export default FarmInfo;
+});

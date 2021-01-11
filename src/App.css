@@ -1,17 +1,21 @@
+* {
+  font-size: 12pt;
+}
+
 .App {
   text-align: center;
-  display: grid;
-  grid-template-areas: 'header' 'navigator' 'content' 'footer';
+  /* display: block; */
+  /* grid-template-areas: 'header' 'navigator' 'content' 'footer'; */
 }
 
 .App-header {
   background-color: #ffffff;
   justify-content: center;
-  grid-area: header;
+  /* grid-area: header; */
 }
 
 .App-navigator {
-  grid-area: navigator;
+  /* grid-area: navigator; */
 }
 
 .App-market {
@@ -20,13 +24,36 @@
 }
 
 .App-content {
-  grid-area: content;
+  /* grid-area: content; */
 }
 
 .App-footer {
-  grid-area: footer;
+  /* grid-area: footer; */
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App_title {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30px;
+  background: linear-gradient(to right, rgb(183, 252, 200), rgb(255, 255, 255) 75%);
+  height: 30px;
+  text-align: left;
+  /* display: block; */
+}
+
+.App_title h2 {
+  font-size: large;
+  color: #64aa6d;
+  margin-left: 10px;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0%;
+  font-family: 'Do Hyeon', sans-serif;
+  line-height: 30px;
 }

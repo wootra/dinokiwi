@@ -1,0 +1,42 @@
+.HowToStore_list {
+    counter-reset: howto-ripe;
+}
+
+.HowToStore_list li {
+    list-style: none;
+    font-size: 0.9rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50px 1fr;
+}
+
+.HowToStore_index {
+    font-size: 3em;
+    grid-column: 1;
+    text-align: left;
+    color: #accc82;
+    counter-increment: howto-ripe;
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 50px;
+}
+
+.HowToStore_howto {
+    color:#6b9139;
+    text-align: left;
+    grid-column: 2;
+}
+
+.HowToStore_howto_desc {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: -1rem;
+    grid-column: 2;
+}
+
+.HowToStore_howto_desc::before {
+    content: '(';
+}
+
+.HowToStore_howto_desc::after {
+    content: ')';
+}

@@ -1,0 +1,94 @@
+.Nutrition_introImg {
+    object-fit:contain;
+    max-width: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+}
+
+.Nutrition_box {
+    outline: solid 1px #b4d89c;
+    outline-offset: -0.5em;
+    padding: 2em;
+}
+
+.Nutrition_box1 {
+    background-image: url("./tip_tag.png");
+    background-repeat:no-repeat;
+    background-position: 0.5em 0.5em;
+}
+
+.Nutrition_box2 {
+    background-image: url("./health_info_tag.png");
+    background-repeat: no-repeat;
+    background-position: 0.5em 0.5em;
+}
+.Nutrition_list {
+    counter-reset: nutrition_order;
+}
+
+.Nutrition_text {
+    text-align: left;
+}
+
+.Nutrition_text2 * {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 10pt;
+}
+
+.Nutrition_text2 strong {
+    color: #59ca0d;
+}
+
+.Nutrition_text3 * {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 10pt;
+}
+
+
+.Nutrition_list ul {
+    margin-bottom: 0;
+}
+
+.Nutrition_list li {
+    list-style: none;
+    text-align: left;
+}
+
+.Nutrition_list li:not(.Nutrition_list_first) {
+    color: #8d8d8d;
+}
+
+.Nutrition_list_first {
+    color:#59ca0d;
+    font-weight: bolder;
+    font-size: 12pt;
+    margin-top: -2pt;
+}
+
+.Nutrition_list_first::after {
+    content: ''
+}
+
+.Nutrition_crown {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.Nutrition_title span{
+    display: inline-flex;
+    font-size: large;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.Nutrition_title span:not(first-child){
+    padding-left: 0.3em;
+}
+
+.Nutrition_list li::before {
+    counter-increment: nutrition_order;
+    font-family: 'Do Hyeon', sans-serif;
+    content: counter(nutrition_order) '위 ';
+    font-size: small;
+    
+}

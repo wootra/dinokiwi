@@ -13,13 +13,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import './NavDrawer.css';
 
-const items = [
-  {text: "농장소개", url:"#farm_intro"},
-  {text: "참다래 영양", url: "#kiwi_nutrition"},
-  {text: "어떻게 먹지?", url: '#how_to_eat'},
-  {text: "오시는 길", url: '#how_to_come'},
-  {text: "마켓", url: "#market"}
-]
+
 
 const useStyles = makeStyles({
   list: {
@@ -31,6 +25,8 @@ const useStyles = makeStyles({
 });
 
 export default function NavDrawer(props) {
+  const items = props.items;
+
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -47,8 +43,18 @@ export default function NavDrawer(props) {
     setState({ ...state, [anchor]: open });
   };
 
-  const gotoUrl = url=>{
-    console.log(url);
+  const gotoUrl = ref=>{
+    const currRef = ref && ref.current;
+    if(currRef){
+      currRef.scrollIntoView(true);
+      // const ele = document.getElementById('');
+
+      const offsetY = currRef.offsetTop;
+      window.scrollTo(0,offsetY-50);
+      console.log({offsetY});
+    }
+    
+    console.log({ref, current: currRef});
   }
 
   const list = (anchor) => (
@@ -62,7 +68,7 @@ export default function NavDrawer(props) {
     >
       <List>
         {items.map((item, index) => (
-          <ListItem button key={item.text} onClick={e=>gotoUrl(item.url)}>
+          <ListItem button key={item.text} onClick={e=>gotoUrl(item.ref)}>
             <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={item.text} />
           </ListItem>
