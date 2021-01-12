@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dinokiwi/static/css/main.bb3fce2d.chunk.css",
-    "main.js": "/dinokiwi/static/js/main.e6bcd3af.chunk.js",
-    "main.js.map": "/dinokiwi/static/js/main.e6bcd3af.chunk.js.map",
-    "runtime-main.js": "/dinokiwi/static/js/runtime-main.6c9b89e2.js",
-    "runtime-main.js.map": "/dinokiwi/static/js/runtime-main.6c9b89e2.js.map",
-    "static/js/2.b460b035.chunk.js": "/dinokiwi/static/js/2.b460b035.chunk.js",
-    "static/js/2.b460b035.chunk.js.map": "/dinokiwi/static/js/2.b460b035.chunk.js.map",
-    "static/js/3.6580ee6b.chunk.js": "/dinokiwi/static/js/3.6580ee6b.chunk.js",
-    "static/js/3.6580ee6b.chunk.js.map": "/dinokiwi/static/js/3.6580ee6b.chunk.js.map",
+    "main.css": "/dinokiwi/static/css/main.6df66530.chunk.css",
+    "main.js": "/dinokiwi/static/js/main.eaae3bf6.chunk.js",
+    "main.js.map": "/dinokiwi/static/js/main.eaae3bf6.chunk.js.map",
+    "runtime-main.js": "/dinokiwi/static/js/runtime-main.956142fe.js",
+    "runtime-main.js.map": "/dinokiwi/static/js/runtime-main.956142fe.js.map",
+    "static/js/2.4de161f0.chunk.js": "/dinokiwi/static/js/2.4de161f0.chunk.js",
+    "static/js/2.4de161f0.chunk.js.map": "/dinokiwi/static/js/2.4de161f0.chunk.js.map",
+    "static/js/3.e237dbb1.chunk.js": "/dinokiwi/static/js/3.e237dbb1.chunk.js",
+    "static/js/3.e237dbb1.chunk.js.map": "/dinokiwi/static/js/3.e237dbb1.chunk.js.map",
     "index.html": "/dinokiwi/index.html",
-    "static/css/main.bb3fce2d.chunk.css.map": "/dinokiwi/static/css/main.bb3fce2d.chunk.css.map",
-    "static/js/2.b460b035.chunk.js.LICENSE.txt": "/dinokiwi/static/js/2.b460b035.chunk.js.LICENSE.txt",
-    "static/media/coming-soon.197bbd29.jpg": "/dinokiwi/static/media/coming-soon.197bbd29.jpg",
+    "static/css/main.6df66530.chunk.css.map": "/dinokiwi/static/css/main.6df66530.chunk.css.map",
+    "static/js/2.4de161f0.chunk.js.LICENSE.txt": "/dinokiwi/static/js/2.4de161f0.chunk.js.LICENSE.txt",
     "static/media/farm_introduce.dc989a2d.png": "/dinokiwi/static/media/farm_introduce.dc989a2d.png",
+    "static/media/App.css": "/dinokiwi/static/media/farm_outside.e7dfcda7.png",
     "static/media/how-to-eat.114d2503.png": "/dinokiwi/static/media/how-to-eat.114d2503.png",
     "static/media/how_to_store.ba3d8734.png": "/dinokiwi/static/media/how_to_store.ba3d8734.png",
     "static/media/kiwi_logo.c3f3c6f2.png": "/dinokiwi/static/media/kiwi_logo.c3f3c6f2.png",
@@ -22,9 +22,9 @@
     "static/media/market_where.1d9c28b4.png": "/dinokiwi/static/media/market_where.1d9c28b4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6c9b89e2.js",
-    "static/js/2.b460b035.chunk.js",
-    "static/css/main.bb3fce2d.chunk.css",
-    "static/js/main.e6bcd3af.chunk.js"
+    "static/js/runtime-main.956142fe.js",
+    "static/js/2.4de161f0.chunk.js",
+    "static/css/main.6df66530.chunk.css",
+    "static/js/main.eaae3bf6.chunk.js"
   ]
 }
