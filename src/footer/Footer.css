@@ -1,5 +1,26 @@
-.Footer_container {
-    background-color: darkolivegreen;
-    color:aliceblue;
-    font-size: 0.8rem;
+.Footer_container * {
+	background-color: rgb(142, 180, 75);
+	color: aliceblue;
+	font-size: 0.5rem;
+	padding-bottom: 1em;
+}
+
+.Footer_container p {
+	margin-bottom: 0;
+}
+
+.Footer_container span {
+	word-break: keep-all;
+	white-space: nowrap;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.Footer_container .Footer_copyright {
+	word-break: keep-all;
+	white-space: nowrap;
+	font-size: 0.7rem;
+	color: rgb(236, 248, 155);
+	padding-bottom: 0.5em;
+	padding-top: 0.7em;
 }

@@ -116,7 +116,7 @@ export default forwardRef((props, ref) => {
 										<p>키위는 왜 몸에 좋을까요?</p>
 									</a>
 									<p className='Nutrition_health_info_list_howto_desc'>
-										키위가 몸에 좋은 이유를 자근자근 말씀해
+										키위가 몸에 좋은 이유를 조근 조근 말씀해
 										주시네요.
 									</p>
 								</div>
