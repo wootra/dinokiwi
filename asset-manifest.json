@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dinokiwi/static/css/main.5e2dc603.chunk.css",
-    "main.js": "/dinokiwi/static/js/main.66ec4ed2.chunk.js",
-    "main.js.map": "/dinokiwi/static/js/main.66ec4ed2.chunk.js.map",
+    "main.css": "/dinokiwi/static/css/main.85dec33c.chunk.css",
+    "main.js": "/dinokiwi/static/js/main.6e01bc28.chunk.js",
+    "main.js.map": "/dinokiwi/static/js/main.6e01bc28.chunk.js.map",
     "runtime-main.js": "/dinokiwi/static/js/runtime-main.915bacd9.js",
     "runtime-main.js.map": "/dinokiwi/static/js/runtime-main.915bacd9.js.map",
     "static/js/2.45847493.chunk.js": "/dinokiwi/static/js/2.45847493.chunk.js",
@@ -10,8 +10,9 @@
     "static/js/3.bd43369e.chunk.js": "/dinokiwi/static/js/3.bd43369e.chunk.js",
     "static/js/3.bd43369e.chunk.js.map": "/dinokiwi/static/js/3.bd43369e.chunk.js.map",
     "index.html": "/dinokiwi/index.html",
-    "static/css/main.5e2dc603.chunk.css.map": "/dinokiwi/static/css/main.5e2dc603.chunk.css.map",
+    "static/css/main.85dec33c.chunk.css.map": "/dinokiwi/static/css/main.85dec33c.chunk.css.map",
     "static/js/2.45847493.chunk.js.LICENSE.txt": "/dinokiwi/static/js/2.45847493.chunk.js.LICENSE.txt",
+    "static/media/FreeDelevery.21c3bf5d.svg": "/dinokiwi/static/media/FreeDelevery.21c3bf5d.svg",
     "static/media/farm_introduce.dc989a2d.png": "/dinokiwi/static/media/farm_introduce.dc989a2d.png",
     "static/media/App.css": "/dinokiwi/static/media/farm_outside.e7dfcda7.png",
     "static/media/how-to-eat.114d2503.png": "/dinokiwi/static/media/how-to-eat.114d2503.png",
@@ -24,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.915bacd9.js",
     "static/js/2.45847493.chunk.js",
-    "static/css/main.5e2dc603.chunk.css",
-    "static/js/main.66ec4ed2.chunk.js"
+    "static/css/main.85dec33c.chunk.css",
+    "static/js/main.6e01bc28.chunk.js"
   ]
 }
