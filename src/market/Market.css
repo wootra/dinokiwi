@@ -14,6 +14,11 @@
 	margin-top: auto;
 	margin-bottom: auto;
 }
+.Market_link_container a * {
+	white-space: nowrap;
+	break-inside: avoid;
+	word-break: keep-all;
+}
 
 .Market_mall_logo {
 	object-fit: contain;

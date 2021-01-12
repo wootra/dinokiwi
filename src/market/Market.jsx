@@ -3,6 +3,7 @@ import marketLogo from "./hd_logo.gif";
 import { getUrl } from "./marketUtil";
 import marketWhere from "./market_where.png";
 import "./Market.css";
+import FreeDelevery from "./FreeDelevery";
 const mallList = [
 	{
 		url: getUrl("dinomall"),
@@ -51,11 +52,14 @@ export default forwardRef((props, ref) => {
 							tooltip='dd'
 							key={idx}
 						>
-							<img
-								src={obj.img}
-								className='Market_mall_logo'
-								alt={`${obj.name} 로고`}
-							/>
+							<div style={{ display: "inline-block" }}>
+								<img
+									src={obj.img}
+									className='Market_mall_logo'
+									alt={`${obj.name} 로고`}
+								/>
+								<FreeDelevery />
+							</div>
 						</a>
 					))}
 				</div>
