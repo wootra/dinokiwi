@@ -45,9 +45,15 @@
     font-size: 0.9rem;
 }
 
+.container.Nutrition_text3 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 .Nutrition_list ul {
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .Nutrition_list li {
@@ -106,6 +112,14 @@
 
 .Nutrition_health_info_list {
     counter-reset: why-should_eat;
+}
+
+.Nutrition_text.Nutrition_text4 > ul {
+    padding-left: 0;
+}
+
+ul.Nutrition_health_info_list_side_effects{
+    padding-left: 1em;
 }
 
 .Nutrition_health_info_list > li {

@@ -1,6 +1,6 @@
 .Market_img {
     object-fit: contain;
-    max-width: 300px;
+    width: 100%;
     /* filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7)); */
     box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
 }

@@ -10,6 +10,10 @@
     counter-reset: howto-ripe;
 }
 
+.HowToStore_list ul {
+    padding-left: 0;
+}
+
 .HowToStore_list li {
     list-style: none;
     font-size: 0.9rem;
