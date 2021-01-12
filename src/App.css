@@ -4,18 +4,15 @@
 
 .App {
   text-align: center;
-  /* display: block; */
-  /* grid-template-areas: 'header' 'navigator' 'content' 'footer'; */
+  display: grid; 
+  grid-template-areas: 'header' 'content' 'footer';
+  height: 80vh;
 }
 
 .App-header {
   background-color: #ffffff;
   justify-content: center;
-  /* grid-area: header; */
-}
-
-.App-navigator {
-  /* grid-area: navigator; */
+  grid-area: header;
 }
 
 .App-market {
@@ -24,11 +21,11 @@
 }
 
 .App-content {
-  /* grid-area: content; */
+  grid-area: content;
 }
 
 .App-footer {
-  /* grid-area: footer; */
+  grid-area: footer;
 }
 
 .App-link {
@@ -56,4 +53,13 @@
   line-height: 0%;
   font-family: 'Do Hyeon', sans-serif;
   line-height: 30px;
+}
+
+.App-farm-outside {
+  background-image: url('./farm_outside.png');
+  background-size: cover;
+  background-color: #64aa6d;
+  background-blend-mode: screen;
+  height: 300px;
+  width: 100%;
 }

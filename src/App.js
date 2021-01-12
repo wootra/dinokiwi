@@ -2,7 +2,6 @@ import './App.css';
 import Footer from './footer/Footer';
 import FarmInfo from './info/FarmInfo';
 import Market from './market/Market';
-import UnderConstruction from './under-construction/UnderConstruction';
 import Header from './header/Header';
 import NavDrawer from './navigator/NavDrawer';
 import Nutrition from './nutirition/Nutrition';
@@ -50,6 +49,8 @@ const items =[
         <Market ref={menus.market.ref} />
         <hr/>
         <HowToCome ref={menus.howToCome.ref}/>
+        <hr/>
+        <div className="App-farm-outside"/>
       </content>
       <Footer className="App-footer" />
     </div>
