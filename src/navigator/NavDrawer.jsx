@@ -68,7 +68,7 @@ export default function NavDrawer(props) {
       <List>
         {items.map((item, index) => (
           <ListItem button key={item.text} onClick={e=>gotoUrl(item.ref)}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon>{item.icon}</ListItemIcon>
             <ListItemText primary={item.text} />
           </ListItem>
         ))}

@@ -9,18 +9,23 @@ import { createRef} from 'react';
 import HowToStore from './how-to-store/HowToStore';
 import HowToEat from './how-to-eat/HowToEat';
 import HowToCome from './how-to-come/HowToCome';
-
+import InfoIcon from '@material-ui/icons/Info';
+import EvStationIcon from '@material-ui/icons/EvStation';
+import KitchenIcon from '@material-ui/icons/Kitchen';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import FastfoodIcon from '@material-ui/icons/Fastfood';
+import MapIcon from '@material-ui/icons/Map';
 
 function App() {
-
+  // index % 2 === 0 ? <InboxIcon /> : <MailIcon />
   
 const menus = {
-  farmIntro: {text: "농장소개", ref: createRef()},
-  nutrition: {text: "참다래 영양", ref: createRef()},
-  howToStore: {text: "보관방법", ref: createRef()},
-  howToEat: {text: "어떻게 먹지?", ref: createRef()},
-  howToCome: {text: "오시는 길", ref: createRef()},
-  market: {text: "마켓", ref: createRef()}
+  farmIntro: {text: "농장소개", ref: createRef(), icon: <InfoIcon />},
+  nutrition: {text: "참다래 영양", ref: createRef(), icon: <EvStationIcon />},
+  howToStore: {text: "보관방법", ref: createRef(), icon: <KitchenIcon />},
+  howToEat: {text: "어떻게 먹지?", ref: createRef(), icon: <FastfoodIcon />},
+  howToCome: {text: "오시는 길", ref: createRef(), icon: <MapIcon />},
+  market: {text: "마켓", ref: createRef(), icon: <ShoppingBasketIcon />}
 };
 
 const items =[
