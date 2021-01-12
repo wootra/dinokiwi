@@ -21,12 +21,12 @@ export default forwardRef((props, ref) => {
 					<div className='FarmInfo_introText1'>
 						<p>
 							성지농장의 "공룡나라참다래" 는 1987년부터 오직
-							참다래를 맛있고 우수하게 키위기 위한 노력을 묵묵히
+							참다래를 맛있고 우수하게 키우기 위한 노력을 묵묵히
 							지속하고 있습니다.
 						</p>
 						<p>
 							성지농장은 산지 3,000평, 평지 4,000 평으로 이루어 진
-							개방형 농장입으로서, 일조량이 많아 당도가 높습니다.
+							개방형 농장으로서, 일조량이 많아 당도가 높습니다.
 						</p>
 					</div>
 					<div className='FarmInfo_introText2'>
@@ -36,21 +36,21 @@ export default forwardRef((props, ref) => {
 						</h3>
 						<ul>
 							<li>
-								자연농법으로 <span>첨단시설</span>과{" "}
-								<span>천연재료를 사용</span>하여 재배합니다.
+								자연농법으로 <strong>첨단시설</strong>과{" "}
+								<strong>천연재료를 사용</strong>하여 재배합니다.
 							</li>
 							<li>
-								일체의 화학농양이나 비료를 지주 않고{" "}
-								<span>유기농법으로 재배</span>합니다.
+								일체의 화학농약이나 비료를 주지 않고{" "}
+								<strong>유기농법으로 재배</strong>합니다.
 							</li>
 							<li>
-								직접 제조한 <span>천연영양제</span>,
-								<span>아미노산</span>,<span>해초</span>,
-								<span>유산균</span> 등으로 품질을 높입니다.
+								직접 제조한 <strong>천연 영양제</strong>,
+								<strong>아미노산</strong>,<strong>해초</strong>,
+								<strong>유산균</strong> 등으로 품질을 높입니다.
 							</li>
 							<li>
 								물 맑고 공기 좋고 일조량이 많은{" "}
-								<span>경남 고성에서 재배</span>됩니다.
+								<strong>경남 고성에서 재배</strong>됩니다.
 							</li>
 						</ul>
 					</div>

@@ -1,56 +1,52 @@
 .FarmInfo_introImg {
-    object-fit:contain;
-    max-width: fit-content;
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: 1.5em;
+	object-fit: contain;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
 }
 
 .FarmInfo_container {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .FarmInfo_container * {
-    text-align: left;
+	text-align: left;
 }
 
-.FarmInfo_introImg{
-
+.FarmInfo_introImg {
 }
 
 .FarmInfo_introText1 {
-
 }
 
 .FarmInfo_introText2 * {
-    font-size: 0.8rem;
-    
+	font-size: 0.8rem;
 }
 
 .FarmInfo_introText2 h3 {
-    font-size: 1.1rem;
-    font-weight: bolder;
-    color:#80a155;
-    counter-reset: farm-tech;
+	font-size: 1.1rem;
+	font-weight: bolder;
+	color: #80a155;
+	counter-reset: farm-tech;
 }
 
-
 .FarmInfo_introText2 li {
-    color: #707070;
-    list-style: none;
+	color: #707070;
+	list-style: none;
 }
 
 .FarmInfo_introText2 li::before {
-    color: #297c42;
-    counter-increment: farm-tech;
-    font-family: 'Do Hyeon', sans-serif;
-    content: '0'  counter(farm-tech) '. ';
-    font-size: small;
+	color: #297c42;
+	counter-increment: farm-tech;
+	font-family: "Do Hyeon", sans-serif;
+	content: "0" counter(farm-tech) ". ";
+	font-size: small;
 }
 
-.FarmInfo_introText2 span {
-    color: #cf9311;
-    font-weight: 800;
+.FarmInfo_introText2 strong {
+	color: #cf9311;
+	font-weight: 800;
 }

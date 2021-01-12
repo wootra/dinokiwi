@@ -1,5 +1,7 @@
 import { forwardRef } from "react";
+import YoutubeIcon from "../YoutubeIcon";
 import nutritionBowl from "./kiwi_nutrition_bowl.png";
+
 import "./Nutrition.css";
 const crown = (
 	<svg
@@ -113,7 +115,10 @@ export default forwardRef((props, ref) => {
 										target='_blank'
 										className='Nutrition_health_info_list_howto'
 									>
-										<p>키위는 왜 몸에 좋을까요?</p>
+										<p>
+											키위는 왜 몸에 좋을까요?
+											<YoutubeIcon />
+										</p>
 									</a>
 									<p className='Nutrition_health_info_list_howto_desc'>
 										키위가 몸에 좋은 이유를 조근 조근 말씀해
@@ -135,6 +140,7 @@ export default forwardRef((props, ref) => {
 										<p>
 											아무리 좋아도 부작용은 알고
 											먹어야겠죠?
+											<YoutubeIcon />
 										</p>
 									</a>
 									<ul className='Nutrition_health_info_list_side_effects'>

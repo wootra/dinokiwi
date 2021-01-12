@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import YoutubeIcon from "../YoutubeIcon";
 import howToEat from "./how-to-eat.png";
 import "./HowToEat.css";
 export default forwardRef((props, ref) => {
@@ -31,6 +32,7 @@ export default forwardRef((props, ref) => {
 										<p>
 											보통은 껍질을 벗기죠? 껍질째로
 											드세요
+											<YoutubeIcon />
 										</p>
 									</a>
 									<p className='HowToEat_howto_desc'>
@@ -52,6 +54,7 @@ export default forwardRef((props, ref) => {
 											털 알러지가 있다면 껍질은 까고
 											먹어야겠죠? 숟가락으로 쉽게 껍질을
 											까세요!
+											<YoutubeIcon />
 										</p>
 									</a>
 									<p className='HowToEat_howto_desc'>
@@ -69,7 +72,10 @@ export default forwardRef((props, ref) => {
 										target='_blank'
 										className='HowToEat_howto'
 									>
-										<p>살짝 익혀서 드세요!</p>
+										<p>
+											살짝 익혀서 드세요!
+											<YoutubeIcon />
+										</p>
 									</a>
 									<p className='HowToEat_howto_desc'>
 										체내 흡수율을 높일 수 있다고 하네요
@@ -85,7 +91,10 @@ export default forwardRef((props, ref) => {
 										target='_blank'
 										className='HowToEat_howto'
 									>
-										<p>키위 드레싱 만드는 법!</p>
+										<p>
+											키위 드레싱 만드는 법!
+											<YoutubeIcon />
+										</p>
 									</a>
 									<p className='HowToEat_howto_desc'>
 										이 분 말씀 구수히 하시네요. 앞에서 약
