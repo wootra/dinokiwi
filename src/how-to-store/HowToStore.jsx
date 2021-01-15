@@ -1,14 +1,17 @@
 import { forwardRef } from "react";
 import howToStore from "./how_to_store.png";
 import "./HowToStore.css";
+import { useImageMove } from "../hooks";
 export default forwardRef((props, ref) => {
 	const { className } = props;
+	useImageMove("howToStore");
 	return (
 		<div
 			ref={ref}
 			className={`container HowToStore_container${
 				className ? " " + className : ""
 			}`}
+			id='howToStore'
 		>
 			<div className='row'>
 				<img

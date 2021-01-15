@@ -1,15 +1,18 @@
 import { forwardRef } from "react";
 import map from "./map.png";
 import "./HowToCome.css";
+import { useImageMove } from "../hooks";
 
 export default forwardRef((props, ref) => {
 	const { className } = props;
+	useImageMove("howToCome");
 	return (
 		<div
 			ref={ref}
 			className={`container HowToCome_container${
 				className ? " " + className : ""
 			}`}
+			id='howToCome'
 		>
 			<div className='row'>
 				<img

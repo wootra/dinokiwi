@@ -1,15 +1,18 @@
 import { forwardRef } from "react";
+import { useImageMove } from "../hooks";
 import YoutubeIcon from "../YoutubeIcon";
 import howToEat from "./how-to-eat.png";
 import "./HowToEat.css";
 export default forwardRef((props, ref) => {
 	const { className } = props;
+	useImageMove("howToEat");
 	return (
 		<div
 			ref={ref}
 			className={`container HowToEat_container${
 				className ? " " + className : ""
 			}`}
+			id='howToEat'
 		>
 			<div className='row'>
 				<img

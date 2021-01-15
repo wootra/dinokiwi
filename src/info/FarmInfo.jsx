@@ -1,19 +1,23 @@
 import { forwardRef } from "react";
+import { useImageMove } from "../hooks";
 import farmIntro from "./farm_introduce.png";
 import "./Info.css";
 
 export default forwardRef((props, ref) => {
 	const { className } = props;
+	useImageMove("farmInfo");
 	return (
 		<div
 			ref={ref}
 			className={`container FarmInfo_container${
 				className ? " " + className : ""
 			}`}
+			id='farmInfo'
 		>
 			<div className='row'>
 				<img
 					className='col-xs col-md-6 col-lg-5 FarmInfo_introImg'
+					id='FarmInfo_introImg'
 					src={farmIntro}
 					alt='성지키위농장 설명'
 				/>

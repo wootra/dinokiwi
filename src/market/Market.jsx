@@ -4,6 +4,7 @@ import { getUrl } from "./marketUtil";
 import marketWhere from "./market_where.png";
 import "./Market.css";
 import FreeDelevery from "./FreeDelevery";
+import { useImageMove } from "../hooks";
 const mallList = [
 	{
 		url: getUrl("dinomall"),
@@ -28,12 +29,14 @@ const mallList = [
 ];
 export default forwardRef((props, ref) => {
 	const { className } = props;
+	useImageMove("market");
 	return (
 		<div
 			ref={ref}
 			className={`container Market_container${
 				className ? " " + className : ""
 			}`}
+			id='market'
 		>
 			<div className='row'>
 				<div className='Market_img_container col-12 col-md-6 col-lg-4'>

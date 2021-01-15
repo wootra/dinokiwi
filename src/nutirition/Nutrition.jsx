@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import { useImageMove } from "../hooks";
 import YoutubeIcon from "../YoutubeIcon";
 import nutritionBowl from "./kiwi_nutrition_bowl.png";
 
@@ -19,6 +20,9 @@ const crown = (
 );
 export default forwardRef((props, ref) => {
 	const { className } = props;
+	useImageMove("Nutrition1");
+	useImageMove("Nutrition2");
+	useImageMove("Nutrition3");
 	return (
 		<div
 			ref={ref}
@@ -26,7 +30,7 @@ export default forwardRef((props, ref) => {
 				className ? " " + className : ""
 			}`}
 		>
-			<div className='row'>
+			<div className='row' id='Nutrition1'>
 				<img
 					className='col-12 d-md-none Nutrition_introImg'
 					src={nutritionBowl}
@@ -52,7 +56,12 @@ export default forwardRef((props, ref) => {
 					src={nutritionBowl}
 					alt='키위의 영양'
 				/>
-				<div className='col-12 col-md-6 Nutrition_box Nutrition_box1'>
+			</div>
+			<div className='row'>
+				<div
+					className='col-12 col-md-6 Nutrition_box Nutrition_box1'
+					id='Nutrition2'
+				>
 					<div className='Nutrition_text Nutrition_text2'>
 						<p>
 							미국식품영양학회에서 각 과일들의 칼로리 당 영양분을
@@ -101,7 +110,10 @@ export default forwardRef((props, ref) => {
 						</div>
 					</div>
 				</div>
-				<div className='col-12 col-md-6 Nutrition_box Nutrition_box2'>
+				<div
+					className='col-12 col-md-6 Nutrition_box Nutrition_box2'
+					id='Nutrition3'
+				>
 					<div className='Nutrition_text Nutrition_text4'>
 						<ul className='Nutrition_health_info_list'>
 							<li>
