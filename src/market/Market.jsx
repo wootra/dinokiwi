@@ -43,7 +43,7 @@ export default forwardRef((props, ref) => {
 						alt='엄마가 키위들고 판매처는요 라고 말하는 그림'
 					/>
 				</div>
-				<div className='Market_link_container col-12 col-md-6 col-lg-8'>
+				<div className='Market_link_container col-12 col-md-6 col-lg-8 mt-5 mt-lg-auto'>
 					{mallList.map((obj, idx) => (
 						<a
 							href={obj.url}
@@ -52,7 +52,10 @@ export default forwardRef((props, ref) => {
 							tooltip='dd'
 							key={idx}
 						>
-							<div style={{ display: "inline-block" }}>
+							<div
+								style={{ display: "inline-block" }}
+								className='Market_mall_logo_container'
+							>
 								<img
 									src={obj.img}
 									className='Market_mall_logo'

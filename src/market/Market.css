@@ -20,6 +20,10 @@
 	word-break: keep-all;
 }
 
+.Market_mall_logo_container {
+	width: 120px;
+}
+
 .Market_mall_logo {
 	object-fit: contain;
 	width: 100px;
