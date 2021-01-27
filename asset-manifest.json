@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dinokiwi/static/css/main.23622447.chunk.css",
-    "main.js": "/dinokiwi/static/js/main.e8f55224.chunk.js",
-    "main.js.map": "/dinokiwi/static/js/main.e8f55224.chunk.js.map",
+    "main.js": "/dinokiwi/static/js/main.9c1b2dc2.chunk.js",
+    "main.js.map": "/dinokiwi/static/js/main.9c1b2dc2.chunk.js.map",
     "runtime-main.js": "/dinokiwi/static/js/runtime-main.915bacd9.js",
     "runtime-main.js.map": "/dinokiwi/static/js/runtime-main.915bacd9.js.map",
     "static/js/2.cee0344e.chunk.js": "/dinokiwi/static/js/2.cee0344e.chunk.js",
@@ -17,9 +17,9 @@
     "static/media/App.css": "/dinokiwi/static/media/farm_outside.e7dfcda7.png",
     "static/media/how-to-eat.114d2503.png": "/dinokiwi/static/media/how-to-eat.114d2503.png",
     "static/media/how_to_store.ba3d8734.png": "/dinokiwi/static/media/how_to_store.ba3d8734.png",
-    "static/media/kiwi_logo.c3f3c6f2.png": "/dinokiwi/static/media/kiwi_logo.c3f3c6f2.png",
     "static/media/kiwi_nutrition_bowl.2e87c7ce.png": "/dinokiwi/static/media/kiwi_nutrition_bowl.2e87c7ce.png",
     "static/media/logo.357ee7af.webp": "/dinokiwi/static/media/logo.357ee7af.webp",
+    "static/media/logo.8f2fddd8.png": "/dinokiwi/static/media/logo.8f2fddd8.png",
     "static/media/map.2a61d0d3.png": "/dinokiwi/static/media/map.2a61d0d3.png",
     "static/media/market_where.1d9c28b4.png": "/dinokiwi/static/media/market_where.1d9c28b4.png"
   },
@@ -27,6 +27,6 @@
     "static/js/runtime-main.915bacd9.js",
     "static/js/2.cee0344e.chunk.js",
     "static/css/main.23622447.chunk.css",
-    "static/js/main.e8f55224.chunk.js"
+    "static/js/main.9c1b2dc2.chunk.js"
   ]
 }
