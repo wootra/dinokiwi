@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 });
 
 export default function NavDrawer(props) {
-	const items = props.items;
+	const { items, registerObserver } = props;
 
 	const classes = useStyles();
 	const [state, setState] = React.useState({
@@ -50,10 +50,16 @@ export default function NavDrawer(props) {
 
 			const offsetY = currRef.offsetTop;
 			window.scrollTo(0, offsetY - 50);
-			console.log({ offsetY });
+			const moveY = Math.abs(window.scrollY - offsetY);
+			const vh = Math.max(
+				document.documentElement.clientHeight || 0,
+				window.innerHeight || 0
+			);
+			if (moveY > vh / 2.0) registerObserver();
+			// console.log({ offsetY });
 		}
 
-		console.log({ ref, current: currRef });
+		// console.log({ ref, current: currRef });
 	};
 
 	const list = (anchor) => (

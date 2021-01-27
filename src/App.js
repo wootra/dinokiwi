@@ -55,8 +55,7 @@ function App() {
 		menus.howToCome,
 		menus.market,
 	];
-
-	useEffect(() => {
+	const registerObserver = () => {
 		const options = {
 			root: null,
 			rootMargin: "0px",
@@ -67,7 +66,6 @@ function App() {
 			if (i[0]) {
 				const it = i[0];
 				if (it.isIntersecting) {
-					console.log("====>", it.target);
 					if (it.target) {
 						it.target.classList.remove("hide");
 						observer.unobserve(it.target);
@@ -76,19 +74,21 @@ function App() {
 			}
 		}, options);
 		items.current.forEach((e, idx) => {
-			e.ref.current.classList.toggle("hide");
+			e.ref.current.classList.add("hide");
 			observer.observe(e.ref.current);
 		});
 		observer.observe(refFarmOutside.current);
 		return () => {
 			items.current.forEach((e, idx) => {
-				e.ref.current.classList.toggle("hide");
+				e.ref.current.classList.remove("hide");
 				observer.unobserve(e.ref.current);
 			});
 			refFarmOutside.current &&
 				observer.unobserve(refFarmOutside.current);
 		};
-	}, [items, refFarmOutside]);
+	};
+
+	useEffect(registerObserver, [items, refFarmOutside]);
 	return (
 		<div className='container App-container'>
 			<div className='row'>
@@ -97,6 +97,7 @@ function App() {
 					<NavDrawer
 						className='App-navigator'
 						items={items.current}
+						registerObserver={registerObserver}
 					/>
 					<Header className='App-header' />
 					{/* <Navigator className="App-navigator" /> */}
