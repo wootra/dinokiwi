@@ -22,6 +22,25 @@
 
 .Market_mall_logo_container {
 	width: 120px;
+	position: relative;
+}
+
+.Market_mall_logo_container > span {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	left: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8rem;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.Market_mall_logo_container > img {
+	background-color: white;
 }
 
 .Market_mall_logo {

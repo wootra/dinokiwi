@@ -58,6 +58,7 @@ export default forwardRef((props, ref) => {
 								style={{ display: "inline-block" }}
 								className='Market_mall_logo_container'
 							>
+								<span>{obj.name}</span>
 								<img
 									src={obj.img}
 									loading='lazy'

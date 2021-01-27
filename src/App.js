@@ -16,6 +16,40 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import MapIcon from "@material-ui/icons/Map";
 
+const options = {
+	root: null,
+	rootMargin: "0px",
+	threshold: [0.3, 0.7],
+};
+
+const observer = new IntersectionObserver((i) => {
+	if (i[0]) {
+		const it = i[0];
+		if (it.isIntersecting) {
+			if (it.target) {
+				it.target.classList.remove("hide");
+				observer.unobserve(it.target);
+			}
+		}
+	}
+}, options);
+
+const setHideClass = (ref) => {
+	const offsetY = ref.offsetTop;
+	const moveY = Math.abs(window.scrollY - offsetY);
+	const vh = Math.max(
+		document.documentElement.clientHeight || 0,
+		window.innerHeight || 0
+	);
+	console.log(moveY, vh / 2.0, ref.classList);
+	if (moveY > vh / 2.0) {
+		ref.classList.add("hide");
+		observer.observe(ref);
+	} else {
+		ref.classList.remove("hide");
+	}
+};
+
 function App() {
 	// index % 2 === 0 ? <InboxIcon /> : <MailIcon />
 
@@ -55,40 +89,24 @@ function App() {
 		menus.howToCome,
 		menus.market,
 	];
-	const registerObserver = () => {
-		const options = {
-			root: null,
-			rootMargin: "0px",
-			threshold: [0.3, 0.7],
-		};
 
-		const observer = new IntersectionObserver((i) => {
-			if (i[0]) {
-				const it = i[0];
-				if (it.isIntersecting) {
-					if (it.target) {
-						it.target.classList.remove("hide");
-						observer.unobserve(it.target);
-					}
-				}
-			}
-		}, options);
+	useEffect(() => {
 		items.current.forEach((e, idx) => {
-			e.ref.current.classList.add("hide");
-			observer.observe(e.ref.current);
+			e.ref.current && setHideClass(e.ref.current);
 		});
+
 		observer.observe(refFarmOutside.current);
 		return () => {
 			items.current.forEach((e, idx) => {
-				e.ref.current.classList.remove("hide");
-				observer.unobserve(e.ref.current);
+				if (e.ref.current) {
+					e.ref.current.classList.remove("hide");
+					observer.unobserve(e.ref.current);
+				}
 			});
 			refFarmOutside.current &&
 				observer.unobserve(refFarmOutside.current);
 		};
-	};
-
-	useEffect(registerObserver, [items, refFarmOutside]);
+	}, [items, refFarmOutside]);
 	return (
 		<div className='container App-container'>
 			<div className='row'>
@@ -97,7 +115,7 @@ function App() {
 					<NavDrawer
 						className='App-navigator'
 						items={items.current}
-						registerObserver={registerObserver}
+						registerObserver={setHideClass}
 					/>
 					<Header className='App-header' />
 					{/* <Navigator className="App-navigator" /> */}

@@ -45,17 +45,13 @@ export default function NavDrawer(props) {
 	const gotoUrl = (ref) => {
 		const currRef = ref && ref.current;
 		if (currRef) {
+			registerObserver(currRef);
 			currRef.scrollIntoView(true);
 			// const ele = document.getElementById('');
 
 			const offsetY = currRef.offsetTop;
 			window.scrollTo(0, offsetY - 50);
-			const moveY = Math.abs(window.scrollY - offsetY);
-			const vh = Math.max(
-				document.documentElement.clientHeight || 0,
-				window.innerHeight || 0
-			);
-			if (moveY > vh / 2.0) registerObserver();
+
 			// console.log({ offsetY });
 		}
 
