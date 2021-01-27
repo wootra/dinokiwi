@@ -1,11 +1,9 @@
 import { forwardRef } from "react";
 import map from "./map.png";
 import "./HowToCome.css";
-import { useImageMove } from "../hooks";
 
 export default forwardRef((props, ref) => {
 	const { className } = props;
-	useImageMove("howToCome");
 	return (
 		<div
 			ref={ref}
@@ -18,6 +16,7 @@ export default forwardRef((props, ref) => {
 				<img
 					className='col-xs col-md-6 col-lg-4 HowToCome_introImg'
 					src={map}
+					loading='lazy'
 					alt='성지키위농장 지도'
 				/>
 				<div className='col-xs col-md-6 col-lg-8'>

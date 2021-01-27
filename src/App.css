@@ -2,6 +2,10 @@
 	font-size: 12pt;
 }
 
+:root {
+	box-sizing: border-box;
+}
+
 .App {
 	text-align: center;
 	display: grid;
@@ -60,12 +64,19 @@
 }
 
 .App-farm-outside {
-	background-image: url("./farm_outside.png");
 	background-size: cover;
 	background-color: #64aa6d;
 	background-blend-mode: screen;
 	height: 300px;
 	width: 100%;
+}
+
+.App-farm-outside {
+	background-image: url("./farm_outside.png");
+}
+
+.App-farm-outside.hide {
+	background-image: none;
 }
 
 .App-container {
@@ -74,4 +85,14 @@
 	padding-left: 0;
 	padding-right: 0;
 	max-width: 100%;
+}
+
+.App-content * {
+	transition: 0.5s transform ease, 0.7s opacity ease 0.2s;
+}
+
+.hide img {
+	display: none;
+	opacity: 0;
+	transform: translateX(100%);
 }

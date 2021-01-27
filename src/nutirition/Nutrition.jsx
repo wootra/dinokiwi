@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import { useImageMove } from "../hooks";
 import YoutubeIcon from "../YoutubeIcon";
 import nutritionBowl from "./kiwi_nutrition_bowl.png";
 
@@ -20,9 +19,6 @@ const crown = (
 );
 export default forwardRef((props, ref) => {
 	const { className } = props;
-	useImageMove("Nutrition1");
-	useImageMove("Nutrition2");
-	useImageMove("Nutrition3");
 	return (
 		<div
 			ref={ref}
@@ -34,6 +30,7 @@ export default forwardRef((props, ref) => {
 				<img
 					className='col-12 d-md-none Nutrition_introImg'
 					src={nutritionBowl}
+					loading='lazy'
 					alt='키위의 영양'
 				/>
 				<div className='col-12 col-md-6 col-lg-7'>
@@ -54,6 +51,7 @@ export default forwardRef((props, ref) => {
 				<img
 					className='d-none d-md-flex col-md-6 col-lg-5 Nutrition_introImg'
 					src={nutritionBowl}
+					loading='lazy'
 					alt='키위의 영양'
 				/>
 			</div>

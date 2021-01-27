@@ -5,7 +5,7 @@ import Market from "./market/Market";
 import Header from "./header/Header";
 import NavDrawer from "./navigator/NavDrawer";
 import Nutrition from "./nutirition/Nutrition";
-import { createRef } from "react";
+import { createRef, useEffect } from "react";
 import HowToStore from "./how-to-store/HowToStore";
 import HowToEat from "./how-to-eat/HowToEat";
 import HowToCome from "./how-to-come/HowToCome";
@@ -44,7 +44,10 @@ function App() {
 		},
 	};
 
-	const items = [
+	let items = createRef();
+	let refFarmOutside = createRef();
+
+	items.current = [
 		menus.farmIntro,
 		menus.nutrition,
 		menus.howToStore,
@@ -52,12 +55,49 @@ function App() {
 		menus.howToCome,
 		menus.market,
 	];
+
+	useEffect(() => {
+		const options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: [0.3, 0.7],
+		};
+
+		const observer = new IntersectionObserver((i) => {
+			if (i[0]) {
+				const it = i[0];
+				if (it.isIntersecting) {
+					console.log("====>", it.target);
+					if (it.target) {
+						it.target.classList.remove("hide");
+						observer.unobserve(it.target);
+					}
+				}
+			}
+		}, options);
+		items.current.forEach((e, idx) => {
+			e.ref.current.classList.toggle("hide");
+			observer.observe(e.ref.current);
+		});
+		observer.observe(refFarmOutside.current);
+		return () => {
+			items.current.forEach((e, idx) => {
+				e.ref.current.classList.toggle("hide");
+				observer.unobserve(e.ref.current);
+			});
+			refFarmOutside.current &&
+				observer.unobserve(refFarmOutside.current);
+		};
+	}, [items, refFarmOutside]);
 	return (
 		<div className='container App-container'>
 			<div className='row'>
 				<div className='d-none d-lg-flex col-lg-1 col-xl-2'></div>
 				<div className='App col-12 col-lg-10 col-xl-8'>
-					<NavDrawer className='App-navigator' items={items} />
+					<NavDrawer
+						className='App-navigator'
+						items={items.current}
+					/>
 					<Header className='App-header' />
 					{/* <Navigator className="App-navigator" /> */}
 
@@ -74,7 +114,10 @@ function App() {
 						<hr />
 						<HowToCome ref={menus.howToCome.ref} />
 						<hr />
-						<div className='App-farm-outside' />
+						<div
+							className='App-farm-outside'
+							ref={refFarmOutside}
+						/>
 					</content>
 					<Footer className='App-footer' />
 				</div>

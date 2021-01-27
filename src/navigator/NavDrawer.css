@@ -1,14 +1,14 @@
 .NavDrawer_button {
-    width: 20px;
-    height: 20px;
+	width: 30px;
+	height: 30px;
 }
 
 .NavDrawer_button:focus {
-    outline: none;
-    border: none;
+	outline: none;
+	border: none;
 }
 
 .NavDrawer_container {
-    position: fixed;
-    z-index: 1000;
+	position: fixed;
+	z-index: 1000;
 }

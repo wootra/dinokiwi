@@ -4,6 +4,7 @@ export default function FreeDelevery(props) {
 	return (
 		<img
 			src={img}
+			loading='lazy'
 			style={{
 				position: "relative",
 				left: "-40px",

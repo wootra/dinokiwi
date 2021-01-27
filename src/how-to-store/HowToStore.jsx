@@ -1,10 +1,8 @@
 import { forwardRef } from "react";
 import howToStore from "./how_to_store.png";
 import "./HowToStore.css";
-import { useImageMove } from "../hooks";
 export default forwardRef((props, ref) => {
 	const { className } = props;
-	useImageMove("howToStore");
 	return (
 		<div
 			ref={ref}
@@ -17,6 +15,7 @@ export default forwardRef((props, ref) => {
 				<img
 					className='col-12 d-md-none HowToStore_introImg'
 					src={howToStore}
+					loading='lazy'
 					alt='보관방법'
 				/>
 				<div className='col-12 col-md-6 col-lg-7'>
@@ -65,6 +64,7 @@ export default forwardRef((props, ref) => {
 				<img
 					className='d-none d-md-flex col-md-6 col-lg-5 HowToStore_introImg'
 					src={howToStore}
+					loading='lazy'
 					alt='보관방법'
 				/>
 			</div>

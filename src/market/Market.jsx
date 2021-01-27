@@ -4,7 +4,6 @@ import { getUrl } from "./marketUtil";
 import marketWhere from "./market_where.png";
 import "./Market.css";
 import FreeDelevery from "./FreeDelevery";
-import { useImageMove } from "../hooks";
 const mallList = [
 	{
 		url: getUrl("dinomall"),
@@ -29,7 +28,6 @@ const mallList = [
 ];
 export default forwardRef((props, ref) => {
 	const { className } = props;
-	useImageMove("market");
 	return (
 		<div
 			ref={ref}
@@ -42,6 +40,7 @@ export default forwardRef((props, ref) => {
 				<div className='Market_img_container col-12 col-md-6 col-lg-4'>
 					<img
 						src={marketWhere}
+						loading='lazy'
 						className='Market_img'
 						alt='엄마가 키위들고 판매처는요 라고 말하는 그림'
 					/>
@@ -61,6 +60,7 @@ export default forwardRef((props, ref) => {
 							>
 								<img
 									src={obj.img}
+									loading='lazy'
 									className='Market_mall_logo'
 									alt={`${obj.name} 로고`}
 								/>

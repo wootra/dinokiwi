@@ -1,11 +1,9 @@
 import { forwardRef } from "react";
-import { useImageMove } from "../hooks";
 import YoutubeIcon from "../YoutubeIcon";
 import howToEat from "./how-to-eat.png";
 import "./HowToEat.css";
 export default forwardRef((props, ref) => {
 	const { className } = props;
-	useImageMove("howToEat");
 	return (
 		<div
 			ref={ref}
@@ -18,6 +16,7 @@ export default forwardRef((props, ref) => {
 				<img
 					className='col-12 d-md-none HowToEat_introImg'
 					src={howToEat}
+					loading='lazy'
 					alt='보관방법'
 				/>
 				<div className='col-12 col-md-6 col-lg-7'>
@@ -112,6 +111,7 @@ export default forwardRef((props, ref) => {
 				<img
 					className='d-none d-md-flex col-md-6 col-lg-5 HowToEat_introImg'
 					src={howToEat}
+					loading='lazy'
 					alt='보관방법'
 				/>
 			</div>
