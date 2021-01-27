@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./Header.css";
-import logo from "./kiwi_logo.png";
+import logo from "./logo.png";
 import logoPart from "./logo.webp";
 
 function Header(props) {
